@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane stylesheets="samplecss.css" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Button fx:id="submitButton" layoutX="235.0" layoutY="254.0" mnemonicParsing="false" onAction="#submit" prefHeight="47.0" prefWidth="104.0" text="Submit" textAlignment="CENTER">
          <font>
@@ -14,5 +15,9 @@
       <Label fx:id="label" layoutX="211.0" layoutY="96.0" prefHeight="35.0" prefWidth="153.0" text="Hello" />
       <PasswordField fx:id="passwordField" layoutX="213.0" layoutY="187.0" promptText="password" />
       <TextField fx:id="textField" layoutX="213.0" layoutY="149.0" promptText="username" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="99.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <Image url="@../../../../Downloads/image.png"/>
+      </ImageView>
    </children>
 </Pane>
